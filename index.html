@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">    
+
+
+
+    <title>Restaurant</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+            <img src="./res/restaurant.jpeg" alt="restaurant_logo">
+        </div>
+        <div class="nav__links" title="passive" id="nav__links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Table</a></li>
+                <li><a href="">Plats</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav__menu" id="nav__menu" onclick="change()">
+            <h3>Menu</h3>
+            <img src="./res/menu.jpeg" width="20"  alt="menu">
+        </div>
+    </nav>
+    <header>
+        <div class="header__text">
+            <h1>Welcome To Our Restaurant</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nobis ad, vel ipsa, iure voluptatibus nemo molestiae, saepe labore assumenda architecto natus ab ducimus explicabo accusantium dicta reiciendis modi! Quisquam!Z</p>
+        </div>
+        <div class="header__image">
+            <img src="./res/header.jpeg" alt="">
+        </div>
+    </header>
+    <section class="section1" id="section">
+        <div class="section1__text">
+            <h3>Do You Wanna Reserve a Table</h3>
+            <button onclick="showForm()">Click Here</button>
+            <button onclick="get()">Click</button>
+        </div>
+        <div class="section1__image">
+            <img src="./res/table.jpeg" alt="table_image">
+        </div>
+        <div class="section1__form hidden" id="form">
+            <form action="/" method="post">
+                <h4>Tableclasse</h4>
+                <label for="tableclasse1">first</label>
+                <input type="radio" id="tableclasse1" name="tableclasse">
+                <label for="tableclasse2">second</label>
+                <input type="radio" id="tableclasse2" name="tableclasse">
+                <label for="tableclasse3">third</label>
+                <input type="radio" id="tableclasse3" name="tableclasse" checked><br>
+
+
+                <label for="room">Room Number</label>
+                <select name="room" id="room">
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+                </select><br>
+
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name" placeholder="enter your name"><br>
+
+                <label for="surname">surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="enter your surname"><br>
+
+                <label for="idcard">idcard:</label>
+                <input type="text" id="idcard" name="idcard" placeholder="enter ur idcard "><br>
+
+                <input type="submit">
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
